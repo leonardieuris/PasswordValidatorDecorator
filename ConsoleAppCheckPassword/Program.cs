@@ -28,8 +28,8 @@ Console.WriteLine($"psw3: {psw3} | isvalid: {response3.Item1} | messageError:{En
 Console.WriteLine("************************************");
 Console.WriteLine($"psw4: {psw4} | isvalid: {response4.Item1} | messageError:{Environment.NewLine}{response4.Item2}");
 Console.WriteLine("************************************");
-Console.WriteLine($"psw5: {psw5} | isvalid:{response5.Item1} | messageError:{Environment.NewLine}{response5.Item2}");
+Console.WriteLine($"psw5: {psw5} | isvalid: {response5.Item1} | messageError:{Environment.NewLine}{response5.Item2}");
 Console.WriteLine("************************************");
-Console.WriteLine($"psw6: {psw6} | isvalid {response6.Item1} | messageError:{Environment.NewLine}{response6.Item2}");
+Console.WriteLine($"psw6: {psw6} | isvalid: {response6.Item1} | messageError:{Environment.NewLine}{response6.Item2}");
 Console.WriteLine("************************************");
 Console.WriteLine($"psw7: {psw7} | isvalid: {response7.Item1} | messageError:{Environment.NewLine}{response7.Item2}");

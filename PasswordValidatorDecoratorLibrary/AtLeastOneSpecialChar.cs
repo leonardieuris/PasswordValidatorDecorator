@@ -7,30 +7,7 @@ internal class AtLeastOneSpecialChar : PasswordDecorator
         MyErrorMessage = "Password must be at least one special char";
     }
 
-    private readonly List<char> specialChars = new List<char>(){
-        '*',
-        '+',
-        '£',
-        '$',
-        '%',
-        '?',
-        '-',
-        '_',
-        '.',
-        ':',
-        ',',
-        ';',
-        '^',
-        '#',
-        '{',
-        '}',
-        '(',
-        ')'
-    };
 
-    protected override bool MyValidator() => _password.Any(x => specialChars.Contains(x));
-
- 
-
+    protected override bool MyValidator() => _password.Any(x => !char.IsLetterOrDigit(x));
 
 }

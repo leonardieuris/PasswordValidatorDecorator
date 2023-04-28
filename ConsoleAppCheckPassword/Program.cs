@@ -16,7 +16,6 @@ var response5 = PasswordChecker.GetResponse(psw5);
 var response6 = PasswordChecker.GetResponse(psw6);
 var response7 = PasswordChecker.GetResponse(psw7);
 
-
 Console.WriteLine("************************************");
 Console.WriteLine($"psw1: {psw1} | isvalid: {response1.Item1} | messageError:{Environment.NewLine}{response1.Item2}");
 Console.WriteLine("************************************");

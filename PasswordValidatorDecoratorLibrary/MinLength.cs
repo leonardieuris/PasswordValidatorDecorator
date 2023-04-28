@@ -7,10 +7,6 @@
             MyErrorMessage  = "Password must be at least 8 characters";
         }
 
-        protected override bool MyValidator()
-        {
-            return Password.Length > 7;
-        }
-
+        protected override bool MyValidator() => Password.Length > 7;
     }
 }

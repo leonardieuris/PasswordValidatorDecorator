@@ -8,6 +8,6 @@ internal class AtLeastOneSpecialChar : PasswordDecorator
     }
 
 
-    protected override bool MyValidator() => _password.Any(x => !char.IsLetterOrDigit(x));
+    protected override bool MyValidator() => Password.Any(x => !char.IsLetterOrDigit(x));
 
 }

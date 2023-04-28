@@ -9,7 +9,7 @@
 
         protected override bool MyValidator()
         {
-            return _password.Length > 7;
+            return Password.Length > 7;
         }
 
     }

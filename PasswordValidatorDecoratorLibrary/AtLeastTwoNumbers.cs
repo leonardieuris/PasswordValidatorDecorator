@@ -7,6 +7,6 @@ internal class AtLeastTwoNumbers : PasswordDecorator
         MyErrorMessage = "Password must be at least two digit";
     }
 
-    protected override bool MyValidator() => _password.Count(x => char.IsNumber(x)) > 1;
+    protected override bool MyValidator() => Password.Count(char.IsNumber) > 1;
     
 }

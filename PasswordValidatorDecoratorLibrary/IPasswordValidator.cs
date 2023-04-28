@@ -1,9 +1,8 @@
 ﻿namespace PasswordValidatorDecoratorLibrary
 {
-    public interface IPasswordValidator
+    internal interface IPasswordValidator
     {
         bool IsValid();
         string ErrorMessage();
-
     }
 }

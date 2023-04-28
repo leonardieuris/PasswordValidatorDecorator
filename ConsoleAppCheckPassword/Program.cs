@@ -8,15 +8,13 @@ var psw5 = "Password1";
 var psw6 = "Password1*";
 var psw7 = "Password12*";
 
-var passwordChecker = new PasswordChecker();
-
-var response1 = passwordChecker.GetResponse(psw1);
-var response2 = passwordChecker.GetResponse(psw2);
-var response3 = passwordChecker.GetResponse(psw3);
-var response4 = passwordChecker.GetResponse(psw4);
-var response5 = passwordChecker.GetResponse(psw5);
-var response6 = passwordChecker.GetResponse(psw6);
-var response7 = passwordChecker.GetResponse(psw7);
+var response1 = PasswordChecker.GetResponse(psw1);
+var response2 = PasswordChecker.GetResponse(psw2);
+var response3 = PasswordChecker.GetResponse(psw3);
+var response4 = PasswordChecker.GetResponse(psw4);
+var response5 = PasswordChecker.GetResponse(psw5);
+var response6 = PasswordChecker.GetResponse(psw6);
+var response7 = PasswordChecker.GetResponse(psw7);
 
 
 Console.WriteLine("************************************");

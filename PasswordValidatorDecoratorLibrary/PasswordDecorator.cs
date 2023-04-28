@@ -3,13 +3,13 @@
     internal abstract class PasswordDecorator : IPasswordValidator
     {
         private readonly IPasswordValidator _passwordValidator;
-        protected string _password;
-        protected string MyErrorMessage;
+        protected readonly string Password;
+        protected string MyErrorMessage = string.Empty;
 
-        public PasswordDecorator(IPasswordValidator passwordValidator,string password)
+        protected PasswordDecorator(IPasswordValidator passwordValidator,string password)
         {
             _passwordValidator = passwordValidator;
-            _password = password;
+            Password = password;
         }
 
         public bool IsValid() => _passwordValidator.IsValid() && MyValidator();

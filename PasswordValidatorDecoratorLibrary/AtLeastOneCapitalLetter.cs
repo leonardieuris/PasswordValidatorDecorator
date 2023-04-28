@@ -7,6 +7,6 @@ internal class AtLeastOneCapitalLetter : PasswordDecorator
         MyErrorMessage = "Password must be at least one capital letter";
     }
 
-    protected override bool MyValidator() => _password.Any(x => char.IsUpper(x));
+    protected override bool MyValidator() => Password.Any(char.IsUpper);
 
 }
